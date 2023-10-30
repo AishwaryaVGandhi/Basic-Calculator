@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BASIC CALCULATOR</h1>
+    <div class="container">
+        <input type="text" name="result" id="result" disabled>
+        <div class="buttons"> 
+            <input type="button" id="seven" value="7" onclick = "result.value += '7'">
+            <input type="button" id="eight" value="8" onclick = "result.value += '8'">
+            <input type="button" id="nine" value="9" onclick = "result.value += '9'">
+            <input type="button" id="divide" value="/" onclick = "result.value += '/'">
+            <br>
+            <input type="button" id="four" value="4" onclick = "result.value += '4'">
+            <input type="button" id="five" value="5" onclick = "result.value += '5'">
+            <input type="button" id="six" value="6" onclick  ="result.value += '6'">
+            <input type="button" id="multiply" value="*" onclick = "result.value += '*'">
+            <br>
+            <input type="button" id="one" value="1" onclick ="result.value += '1'">
+            <input type="button" id="two" value="2" onclick ="result.value += '2'">
+            <input type="button" id="three" value="3" onclick ="result.value += '3'">
+            <input type="button" id="addition" value="+" onclick = "result.value += '+'">
+            <br>
+            <input type="button" id="zero" value="0" onclick ="result.value += '0'">
+            <input type="button" id="percentage" value="00" onclick = "result.value += '00'">
+            <input type="button" id="decimal" value="." onclick = "result.value += '.'">
+            <input type="button" id="subtract" value="-" onclick = "result.value += '-'">
+            <br>
+            <div class="last-line">
+                <input type="button" id="clear"  value="C" onclick = "result.value = ' '">
+                <input type="button" id="equal-to" value="=" onclick = "result.value = eval(result.value)">
+            </div>
+        </div>   
+    </div>
+
+    <h4>&copy; Aishwarya V Gandhi, All Rights Reserved.</h4>
+</body>
+</html>
